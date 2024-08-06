@@ -2,8 +2,10 @@ import CityItem from "./CityItem";
 import Message from "./Message";
 import Spinner from "./Spinner";
 import styles from "./CityList.module.css";
+import { useCities } from "../contexts/CitiesProvider";
 
-function CityList({ cities, isLoading }) {
+function CityList() {
+  const { cities, isLoading } = useCities();
   if (cities.length === 0) return <Message message={"Add a City!"} />;
   if (isLoading) return <Spinner />;
   return (

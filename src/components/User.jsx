@@ -14,7 +14,7 @@ function User() {
 
   return (
     <div className={styles.user}>
-      <span>Welcome, {user?.name}</span>
+      <span>Welcome, {user.name}</span>
       <button onClick={handleClick}>Logout</button>
     </div>
   );

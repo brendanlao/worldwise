@@ -1,19 +1,26 @@
 import { useNavigate } from "react-router-dom";
 import Logo from "../components/Logo";
 import styles from "./Login.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useAuth } from "../contexts/AuthContext";
+import Button from "../components/Button";
 
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
-  const [email, setEmail] = useState("jack@example.com");
+  const [email, setEmail] = useState("bob@example.com");
   const [password, setPassword] = useState("qwerty");
   const navigate = useNavigate();
+  const { handleLogin, isAuthenticated } = useAuth();
 
   function handleSubmit(e) {
     e.preventDefault();
-    navigate("/app");
+    if (email && password) handleLogin(email, password);
   }
 
+  //need effect for isAuthenticated because if it's in handleSubmit, would not work since handleLogin is asynchronous
+  useEffect(() => {
+    if (isAuthenticated) navigate("/app", { replace: true });
+  }, [isAuthenticated, navigate]);
   return (
     <main className={styles.login}>
       <Logo />
@@ -40,7 +47,7 @@ export default function Login() {
         </div>
 
         <div>
-          <button>Login</button>
+          <Button type="primary">Login</Button>
         </div>
       </form>
     </main>

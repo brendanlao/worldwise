@@ -15,10 +15,10 @@ const formatDate = (date) =>
 
 function City() {
   const { id } = useParams();
-  const { currentCity, fetchCityData, isLoading } = useCities();
+  const { currentCity, fetchData, isLoading } = useCities();
 
   useEffect(() => {
-    fetchCityData(id);
+    fetchData(id, "city/loaded");
   }, [id]);
 
   const { cityName, emoji, date, notes } = currentCity;

@@ -1,27 +1,87 @@
 {
   "cities": [
     {
+      "id": "b8b2",
       "cityName": "Lisbon",
       "country": "Portugal",
       "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "date": "2024-08-07T00:04:40.942Z",
+      "notes": "",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
+        "lat": "38.7108713144494",
+        "lng": "-9.146118164062502"
+      }
     },
     {
-      "id": "b434",
+      "id": "4c44",
       "cityName": "Los Angeles",
       "country": "United States of America (the)",
       "emoji": "🇺🇸",
-      "date": "2024-08-06T23:34:38.966Z",
+      "date": "2024-08-07T00:21:10.084Z",
       "notes": "",
       "position": {
-        "lat": "33.99346786052056",
-        "lng": "-117.99316406250001"
+        "lat": "34.083584092797025",
+        "lng": "-118.19091796875"
+      }
+    },
+    {
+      "id": "1a84",
+      "cityName": "Raviscanina",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-08-07T00:41:02.026Z",
+      "notes": "",
+      "position": {
+        "lat": "41.36476223870813",
+        "lng": "14.23828125"
+      }
+    },
+    {
+      "id": "c9b4",
+      "cityName": "Las Vegas",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-07T00:41:39.762Z",
+      "notes": "",
+      "position": {
+        "lat": "36.206844288528195",
+        "lng": "-115.20263671875001"
+      }
+    },
+    {
+      "id": "9f97",
+      "cityName": "Albuquerque",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-07T00:58:35.113Z",
+      "notes": "breaking bad!",
+      "position": {
+        "lat": "35.059119710671446",
+        "lng": "-106.61132812500001"
+      }
+    },
+    {
+      "id": "30d9",
+      "cityName": "Fresno",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-07T00:59:55.791Z",
+      "notes": "",
+      "position": {
+        "lat": "36.75514072958741",
+        "lng": "-119.75097656250001"
+      }
+    },
+    {
+      "id": "1f10",
+      "cityName": "San Francisco",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-07T01:00:07.428Z",
+      "notes": "sf!",
+      "position": {
+        "lat": "37.819651985911506",
+        "lng": "-122.36572265625001"
       }
     }
   ]

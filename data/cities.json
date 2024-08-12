@@ -61,18 +61,6 @@
       }
     },
     {
-      "id": "30d9",
-      "cityName": "Fresno",
-      "country": "United States of America (the)",
-      "emoji": "🇺🇸",
-      "date": "2024-08-07T00:59:55.791Z",
-      "notes": "",
-      "position": {
-        "lat": "36.75514072958741",
-        "lng": "-119.75097656250001"
-      }
-    },
-    {
       "id": "1f10",
       "cityName": "San Francisco",
       "country": "United States of America (the)",
@@ -82,6 +70,30 @@
       "position": {
         "lat": "37.819651985911506",
         "lng": "-122.36572265625001"
+      }
+    },
+    {
+      "id": "90e5",
+      "cityName": "Frankfurt am Main",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2024-08-07T06:36:02.512Z",
+      "notes": "loozy",
+      "position": {
+        "lat": "50.10648772767332",
+        "lng": "8.657226562500002"
+      }
+    },
+    {
+      "id": "6fc3",
+      "cityName": "San Francisco",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-07T06:37:38.339Z",
+      "notes": "loozy",
+      "position": {
+        "lat": "37.54945999174072",
+        "lng": "-122.25981295108797"
       }
     }
   ]

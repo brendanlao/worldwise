@@ -1,4 +1,10 @@
-import { createContext, useEffect, useContext, useReducer } from "react";
+import {
+  createContext,
+  useEffect,
+  useContext,
+  useReducer,
+  useCallback,
+} from "react";
 const APIURL = "http://localhost:9000";
 
 const CitiesContext = createContext();
@@ -57,7 +63,7 @@ function CitiesProvider({ children }) {
     initialState
   );
 
-  async function fetchData(id, type) {
+  const fetchData = useCallback(async function fetchData(id, type) {
     try {
       dispatch({ type: "loading" });
       const res = await fetch(`${APIURL}/cities/${id}`);
@@ -66,11 +72,11 @@ function CitiesProvider({ children }) {
     } catch {
       dispatch({ type: "rejected", payload: "Error fetching data" });
     }
-  }
+  }, []);
 
   useEffect(() => {
     fetchData("", "cities/loaded");
-  }, []);
+  }, [fetchData]);
 
   async function uploadCity(cityObj) {
     try {
@@ -113,6 +119,7 @@ function CitiesProvider({ children }) {
         fetchData,
         uploadCity,
         deleteCity,
+        error,
       }}
     >
       {children}

@@ -83,18 +83,6 @@
         "lat": "50.10648772767332",
         "lng": "8.657226562500002"
       }
-    },
-    {
-      "id": "6fc3",
-      "cityName": "San Francisco",
-      "country": "United States of America (the)",
-      "emoji": "🇺🇸",
-      "date": "2024-08-07T06:37:38.339Z",
-      "notes": "loozy",
-      "position": {
-        "lat": "37.54945999174072",
-        "lng": "-122.25981295108797"
-      }
     }
   ]
 }

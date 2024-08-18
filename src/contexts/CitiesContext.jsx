@@ -47,7 +47,17 @@ function reducer(state, action) {
         currentCity: {},
       };
     }
-
+    case "city/edited": {
+      return {
+        ...state,
+        isLoading: false,
+        cities: state.cities.map((city) => {
+          if (city.id === action.payload.id) return action.payload;
+          else return city;
+        }),
+        currentCity: action.payload,
+      };
+    }
     case "rejected": {
       return { ...state, isLoading: false, error: action.payload };
     }
@@ -86,6 +96,9 @@ function CitiesProvider({ children }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cityObj),
       });
+
+      if (!res.ok) throw new Error("POST unsuccessful");
+
       const data = await res.json();
       dispatch({ type: "city/created", payload: data });
     } catch {
@@ -110,6 +123,22 @@ function CitiesProvider({ children }) {
     }
   }
 
+  async function editCity(id, updatedData) {
+    try {
+      dispatch({ type: "loading" });
+      const res = await fetch(`${APIURL}/cities/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedData),
+      });
+      if (!res.ok) throw new Error("PUT unsuccessful");
+      const data = await res.json();
+      dispatch({ type: "city/edited", payload: data });
+    } catch (err) {
+      dispatch({ type: "rejected", payload: "Error editing data" });
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -119,6 +148,7 @@ function CitiesProvider({ children }) {
         fetchData,
         uploadCity,
         deleteCity,
+        editCity,
         error,
       }}
     >

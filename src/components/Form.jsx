@@ -1,8 +1,8 @@
 // "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0"
 
 import { useState, useEffect } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import { useCities } from "../contexts/CitiesContext";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./Form.module.css";
 
@@ -11,8 +11,8 @@ import ButtonBack from "./ButtonBack";
 import useParamsLocation from "../hooks/useParamsLocation";
 import Spinner from "./Spinner";
 import Message from "./Message";
-import { useCities } from "../contexts/CitiesContext";
-import { useNavigate } from "react-router-dom";
+import DateBox from "./DateBox";
+import NoteBox from "./NoteBox";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -98,24 +98,17 @@ function Form() {
         <span className={styles.flag}>{emoji}</span>
       </div>
 
-      <div className={styles.row}>
-        <label htmlFor="date">When did you go to {cityName}?</label>
-        <DatePicker
-          id="date"
-          onChange={(date) => setDate(date)}
-          selected={date}
-          dateFormat="MM/dd/yyyy"
-        />
-      </div>
+      <DateBox
+        onChange={(date) => setDate(date)}
+        date={date}
+        className={styles.row}
+      >
+        When did you go to {cityName}?
+      </DateBox>
 
-      <div className={styles.row}>
-        <label htmlFor="notes">Notes about your trip to {cityName}</label>
-        <textarea
-          id="notes"
-          onChange={(e) => setNotes(e.target.value)}
-          value={notes}
-        />
-      </div>
+      <NoteBox onChange={(e) => setNotes(e.target.value)} notes={notes}>
+        Notes about your trip to {cityName}
+      </NoteBox>
 
       <div className={styles.buttons}>
         <Button type="primary">Add</Button>

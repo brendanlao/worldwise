@@ -1,60 +1,35 @@
 {
   "cities": [
     {
-      "id": "b8b2",
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2024-08-07T00:04:40.942Z",
-      "notes": "",
-      "position": {
-        "lat": "38.7108713144494",
-        "lng": "-9.146118164062502"
-      }
-    },
-    {
       "id": "4c44",
       "cityName": "Los Angeles",
       "country": "United States of America (the)",
       "emoji": "🇺🇸",
-      "date": "2024-08-07T00:21:10.084Z",
-      "notes": "",
+      "date": "2024-07-31T07:00:00.000Z",
+      "notes": "LA!",
       "position": {
         "lat": "34.083584092797025",
         "lng": "-118.19091796875"
       }
     },
     {
-      "id": "1a84",
-      "cityName": "Raviscanina",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-08-07T00:41:02.026Z",
-      "notes": "",
-      "position": {
-        "lat": "41.36476223870813",
-        "lng": "14.23828125"
-      }
-    },
-    {
       "id": "c9b4",
       "cityName": "Las Vegas",
       "country": "United States of America (the)",
+      "date": "2024-07-31T07:00:00.000Z",
       "emoji": "🇺🇸",
-      "date": "2024-08-07T00:41:39.762Z",
-      "notes": "",
       "position": {
         "lat": "36.206844288528195",
         "lng": "-115.20263671875001"
-      }
+      },
+      "notes": "LV!"
     },
     {
       "id": "9f97",
       "cityName": "Albuquerque",
       "country": "United States of America (the)",
+      "date": "2024-07-31T07:00:00.000Z",
       "emoji": "🇺🇸",
-      "date": "2024-08-07T00:58:35.113Z",
-      "notes": "breaking bad!",
       "position": {
         "lat": "35.059119710671446",
         "lng": "-106.61132812500001"
@@ -65,23 +40,11 @@
       "cityName": "San Francisco",
       "country": "United States of America (the)",
       "emoji": "🇺🇸",
-      "date": "2024-08-07T01:00:07.428Z",
-      "notes": "sf!",
+      "date": "2024-07-31T07:00:00.000Z",
+      "notes": "SF!",
       "position": {
         "lat": "37.819651985911506",
         "lng": "-122.36572265625001"
-      }
-    },
-    {
-      "id": "90e5",
-      "cityName": "Frankfurt am Main",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2024-08-07T06:36:02.512Z",
-      "notes": "loozy",
-      "position": {
-        "lat": "50.10648772767332",
-        "lng": "8.657226562500002"
       }
     }
   ]

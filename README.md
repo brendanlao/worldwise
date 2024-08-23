@@ -1,17 +1,18 @@
-# Project
+# Worldwise
 
-Worldwise - a SPA that allows users to plan out their travels and pinpoint cities that they have visited.  It was built with React as a front-end library, React Router to handle client side routing, and Leaflet, an open source tool to display an interactive map.  
+## Overview
+Worldwise: a SPA that allows users to plan out their travels and pinpoint cities that they have visited.  It was built with React as a front-end library, React Router to handle client side routing, and Leaflet, an open source tool to display an interactive map.  
 
-## Functionality
+### Functionality
 
 - Interactive World Map: Users can click on any location on the map to add it to their travel log.
 - City List: A list of all visited cities, which can be clicked to view personalized user details
 - City Details: Each city entry includes the date of visit, a custom note, and the option to delete the entry.
    
-## Limitations
+### Limitations
 
 - The authentication is not secure and user information is not encrypted.  This was done in order to more so focus on front-end concepts
-- The back-end was mocked using JSON server, and functionality was added for HTTP requests such as GET, POST, and DELETE.  However, this does not test for scalability and performance in a real-world scenario
+- The back-end was mocked using JSON server, and functionality was added for HTTP requests such as GET, PUT, POST, and DELETE.  However, this does not test for scalability and performance in a real-world scenario
 
 ## Project Screen Shot(s)
 

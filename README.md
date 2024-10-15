@@ -60,7 +60,7 @@ Another challenge was understanding techniques related to optimization with tool
 
 #### Data Structures 
 
-One of the functionalities included generating a list of countries from the list of cities provided in the mock API.  A problem with this is that each country must be represented only once even if multiple cities in that country are present in the list of cities.  The course had an alternative method by linearly checking all elements each time a new city was considered, which was O(n^2) complexity.  I decided to try a different implementation using a Map, which allowed for O(nlogn) complexity
+One of the functionalities included generating a list of countries from the list of cities provided in the mock API.  A problem with this is that each country must be represented only once even if multiple cities in that country are present in the list of cities.  The course had an alternative method by linearly checking all elements each time a new city was considered, which was O(n^2) complexity.  I decided to try a different implementation using a Map, which allowed for O(n) complexity (iterate through all elements and O(1) lookup to see if element is in the map)
 
 Sample data from mocked API:
 ```JavaScript
